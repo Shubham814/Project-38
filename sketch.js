@@ -32,10 +32,7 @@ function setup() {
   var canvas = createCanvas(600,600);
   database = firebase.database();
   
-  database.ref('/').update({
-    FeedTime:hour(),
-    Food:foodS
-  })
+
 
   dog = createSprite(500,350,10,10);
   dog.addImage(dogImg)
